@@ -1,0 +1,31 @@
+POST https://localhost:3000/api/user HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "st1008",
+  "firstName": "Stu",
+  "lastName": "Dent",
+  "password": "Pass45465"
+}
+
+//----------------------------------------------------
+###
+POST https://localhost:3000/api/auth HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "stuff",
+  "password": "Pass45465"
+}
+
+//----------------------------------------------------
+###
+POST https://localhost:3000/api/posts HTTP/1.1
+Content-Type: application/json
+x-auth-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTI1MmJhMDY2M2NhZGFjMWEyYmM5MzQiLCJpYXQiOjE2OTY5MzUyNzd9.CAKqw5yuWVh3FG5aYfe2vZ0IJvQaVv1OXKY6OLch5kQ
+
+{
+    "title" : "Tour",
+    "description" : "de be pirates",
+    "departmentCode" : "CIAf"
+}
